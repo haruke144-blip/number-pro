@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>โปรแกรมวินเลข</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ======================
+ปุ่มค้นหามุมซ้ายบน
+====================== -->
+
+<button 
+class="search-float"
+onclick="toggleSearch()">
+
+🔍 ค้นหา
+
+</button>
+
+
+
+
+
+
+<!-- ======================
+เมนูชุดเลขมุมขวาบน
+====================== -->
+
+<div class="quick-menu">
+
+
+<button 
+class="ham-btn"
+onclick="copySet(ham3,'3 ตัวหาม',this)">
+
+3 ตัวหาม
+
+</button>
+
+
+
+<button 
+class="front-btn"
+onclick="copySet(doubleFront,'เบิ้ลหน้า',this)">
+
+เบิ้ลหน้า
+
+</button>
+
+
+
+<button 
+class="back-btn"
+onclick="copySet(doubleBack,'เบิ้ลหลัง',this)">
+
+เบิ้ลหลัง
+
+</button>
+
+
+
+<button 
+class="sib-btn"
+onclick="copySet(siblings,'เลขพี่น้อง',this)">
+
+พี่น้อง
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+<h1>
+🎲 โปรแกรมวินเลข
+</h1>
+
+
+
+
+
+
+<!-- ======================
+ช่องใส่เลข
+====================== -->
+
+
+<div class="card">
+
+
+<textarea 
+id="number"
+placeholder="ใส่เลขวิน">
+
+</textarea>
+
+
+
+
+
+<div class="btn-area">
+
+
+<button 
+class="reset"
+onclick="resetData()">
+
+เริ่มใหม่
+
+</button>
+
+
+
+
+<button 
+class="calculate"
+onclick="calculate()">
+
+คำนวณ
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ======================
+ผลลัพธ์
+====================== -->
+
+
+<div id="output"></div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ======================
+Popup ค้นหาเลข
+====================== -->
+
+
+<div id="searchModal" class="modal">
+
+
+
+<div class="modal-box">
+
+
+
+<button
+
+class="close-modal"
+
+onclick="toggleSearch()">
+
+✖
+
+</button>
+
+
+
+
+
+<h2>
+
+🔍 ค้นหาเลข
+
+</h2>
+
+
+
+
+
+<input
+
+type="text"
+
+id="searchNumber"
+
+placeholder="ใส่เลขที่ต้องการค้นหา">
+
+
+
+
+
+<button
+
+class="search-btn"
+
+onclick="searchNumber()">
+
+ค้นหา
+
+</button>
+
+
+
+
+
+
+<div id="searchResult"></div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ======================
+Dark Mode
+====================== -->
+
+
+<button
+
+class="dark-toggle"
+
+onclick="toggleDark()">
+
+🌙
+
+</button>
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+</html>
